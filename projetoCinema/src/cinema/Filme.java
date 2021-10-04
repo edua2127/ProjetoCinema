@@ -5,6 +5,16 @@ import java.util.List;
 public class Filme {
     CategoriaDeFilme categoria = new CategoriaDeFilme();
     String Sessao;
+    double nota;
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void avaliarFilme(double nota) {
+        this.nota = nota;
+    }
+
     List<String>atores = new ArrayList<String>();
 
     public CategoriaDeFilme getCategoria() {
@@ -33,10 +43,10 @@ public class Filme {
 
     @Override
     public String toString() {
-        return "Filme{" +
-                "categoria=" + categoria +
-                ", Sessao='" + Sessao + '\'' +
-                ", atores=" + atores +
-                '}';
+        return "Filme: " +
+                "\ncategoria=" + categoria +
+                "\nSessao='" + Sessao + '\'' +
+                "\natores=" + atores + "\nnota do filme: " + nota;
+
     }
 }

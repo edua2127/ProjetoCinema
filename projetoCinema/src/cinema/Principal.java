@@ -7,6 +7,7 @@ public class Principal {
         f1.getCategoria().genero.add("terror");
         f1.getCategoria().genero.add("acao");
         f1.setSessao("18:30");
+        f1.avaliarFilme(4.5);
         f1.getAtores().add("eduardo de souza magalhaes");
         f1.getAtores().add("Pedro henrique da Costa");
         f1.getCategoria().setCategoriaDuracao("curta metragem");
