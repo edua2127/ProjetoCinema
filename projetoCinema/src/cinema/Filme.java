@@ -10,7 +10,10 @@ public class Filme {
     public double getNota() {
         return nota;
     }
-
+    public void assistirFilme() {
+        System.out.println("voce esta assistindo ao filme");
+        System.out.println("depois de assistir avalie por favor");
+    }
     public void avaliarFilme(double nota) {
         this.nota = nota;
     }
